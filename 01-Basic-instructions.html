@@ -113,10 +113,6 @@
 <li><p>Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering ‘yes’ to both questions.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <pre><code>travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x</code></pre></li>
 </ol>
-<p>Also, if you don’t have <a href="https://github.com/travis-ci/travis.rb#installation">travis</a> installed on your computer yet, you can install it with this command:</p>
-<p><code>brew install travis</code></p>
-<p>If you don’t have <a href="https://brew.sh">brew</a> installed yet… prepare yourself for some waiting. You can install it with this command:</p>
-<p><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code></p>
 <p><em>Congrats!</em> You now have a new book that will rebuild automatically any time you push changes to github.</p>
 <p>For more in-depth instructions on setting up your new book, as well as important information on how to code the book, check out the <a href="https://warhornmedia.github.io/style-guide">style guide</a>.</p>
 
@@ -128,10 +124,18 @@
 
 
 
+
+
+
+
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p><a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token">Here are instructions</a> for creating a Github Personal Access Token if you don’t have one yet. (Check the “repo” box under “scopes” to give the necessary permissions.)<a href="01-Basic-instructions.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token">Here are instructions</a> for creating a Github Personal Access Token if you don’t have one yet. (Check the “repo” box under “scopes” to give the necessary permissions.)</p>
+<p>Also, if you don’t have <a href="https://github.com/travis-ci/travis.rb#installation">travis</a> installed on your computer yet, you can install it with this command:</p>
+<p><code>brew install travis</code></p>
+<p>If you don’t have <a href="https://brew.sh">brew</a> installed yet… prepare yourself for some waiting. You can install it with this command:</p>
+<p><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code><a href="01-Basic-instructions.html#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 <script> 

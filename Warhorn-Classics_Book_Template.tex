@@ -184,20 +184,20 @@ God bless,
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \item
-  Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering `yes' to both questions.\footnote{\href{https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token}{Here are instructions} for creating a Github Personal Access Token if you don't have one yet. (Check the ``repo'' box under ``scopes'' to give the necessary permissions.)}
+  Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering `yes' to both questions.\footnote{\href{https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token}{Here are instructions} for creating a Github Personal Access Token if you don't have one yet. (Check the ``repo'' box under ``scopes'' to give the necessary permissions.)
+
+    Also, if you don't have \href{https://github.com/travis-ci/travis.rb\#installation}{travis} installed on your computer yet, you can install it with this command:
+
+    \texttt{brew\ install\ travis}
+
+    If you don't have \href{https://brew.sh}{brew} installed yet\ldots{} prepare yourself for some waiting. You can install it with this command:
+
+    \texttt{/bin/bash\ -c\ "\$(curl\ -fsSL\ https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"}}
 
 \begin{verbatim}
 travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x
 \end{verbatim}
 \end{enumerate}
-
-Also, if you don't have \href{https://github.com/travis-ci/travis.rb\#installation}{travis} installed on your computer yet, you can install it with this command:
-
-\texttt{brew\ install\ travis}
-
-If you don't have \href{https://brew.sh}{brew} installed yet\ldots{} prepare yourself for some waiting. You can install it with this command:
-
-\texttt{/bin/bash\ -c\ "\$(curl\ -fsSL\ https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"}
 
 \emph{Congrats!} You now have a new book that will rebuild automatically any time you push changes to github.
 
