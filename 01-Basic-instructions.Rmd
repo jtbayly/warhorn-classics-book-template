@@ -24,11 +24,15 @@ knitr::include_graphics('images/screenshot2.png')
 
     Also, if you don't have [travis](https://github.com/travis-ci/travis.rb#installation) installed on your computer yet, you can install it with this command: 
 
-    `brew install travis`
+    ```
+      brew install travis
+    ```
 
     If you don't have [brew](https://brew.sh) installed yet... prepare yourself for some waiting. You can install it with this command:
 
-    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+    ```
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    ```
 
 *Congrats!* You now have a new book that will rebuild automatically any time you push changes to github.
 
