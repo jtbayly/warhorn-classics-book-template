@@ -32,6 +32,7 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{fancyvrb}
 \usepackage{xcolor}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
@@ -41,6 +42,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\VerbatimFootnotes % allow verbatim text in footnotes
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -188,11 +190,16 @@ God bless,
 
     Also, if you don't have \href{https://github.com/travis-ci/travis.rb\#installation}{travis} installed on your computer yet, you can install it with this command:
 
-    \texttt{brew\ install\ travis}
+\begin{Verbatim}
+  brew install travis
+\end{Verbatim}
 
     If you don't have \href{https://brew.sh}{brew} installed yet\ldots{} prepare yourself for some waiting. You can install it with this command:
 
-    \texttt{/bin/bash\ -c\ "\$(curl\ -fsSL\ https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"}}
+\begin{Verbatim}
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+\end{Verbatim}
+  }
 
 \begin{verbatim}
 travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x

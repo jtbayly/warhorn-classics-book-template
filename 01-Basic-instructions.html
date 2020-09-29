@@ -110,7 +110,7 @@
 </ol>
 <p><img src="images/screenshot2.png" width="65%" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
-<li><p>Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering ‘yes’ to both questions.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<li><p>Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering ‘yes’ to both questions.<a href="01-Basic-instructions.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <pre><code>travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x</code></pre></li>
 </ol>
 <p><em>Congrats!</em> You now have a new book that will rebuild automatically any time you push changes to github.</p>
@@ -118,24 +118,15 @@
 
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 <div class="footnotes">
 <hr />
-<ol start="1">
+<ol>
 <li id="fn1"><p><a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token">Here are instructions</a> for creating a Github Personal Access Token if you don’t have one yet. (Check the “repo” box under “scopes” to give the necessary permissions.)</p>
 <p>Also, if you don’t have <a href="https://github.com/travis-ci/travis.rb#installation">travis</a> installed on your computer yet, you can install it with this command:</p>
-<p><code>brew install travis</code></p>
+<pre><code>  brew install travis</code></pre>
 <p>If you don’t have <a href="https://brew.sh">brew</a> installed yet… prepare yourself for some waiting. You can install it with this command:</p>
-<p><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code><a href="01-Basic-instructions.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<pre><code>  /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</code></pre>
+<a href="01-Basic-instructions.html#fnref1" class="footnote-back">↩︎</a></li>
 </ol>
 </div>
 <script> 
