@@ -1,0 +1,20 @@
+# Some quick reminders
+
+## Creating a new book
+
+1. Clone this template book repository to a new repository owned by Warhorn Media on GitHub
+  - Please use the format "authorlastname-short-title" to name the new repo
+2. Clone the new repo to your computer and navigate into its folder in a command prompt
+3. Run the following commands locally
+  travis encrypt GITHUB_PAT=yourTokenGoesHere --add
+	git checkout --orphan gh-pages
+	git rm -rf .
+	touch .nojekyll
+	git add .nojekyll
+	git commit -m"Initial commit"
+	git push origin gh-pages
+4. Add the project on travis-ci.com (You may have to log out and back in for the project to show up.)
+
+*Congrats!* You now have a new book that will rebuild automatically any time you push changes to github.
+
+For more in-depth instructions, as well as important information on how to code the book, check out the [style guide](https://warhornmedia.github.io/style-guide).
