@@ -22,14 +22,13 @@ knitr::include_graphics('images/screenshot2.png')
 
 [^1]: [Here are instructions](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) for creating a Github Personal Access Token if you don't have one yet. (Check the “repo” box under "scopes" to give the necessary permissions.)
 
-  Also, if you don't have [travis](https://github.com/travis-ci/travis.rb#installation) installed on your computer yet, you can install it with this command: 
-   
-  `brew install travis`
-   
-  If you don't have [brew](https://brew.sh) installed yet... prepare yourself for some waiting. You can install it with this command:
-   
-  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+    Also, if you don't have [travis](https://github.com/travis-ci/travis.rb#installation) installed on your computer yet, you can install it with this command: 
 
+    `brew install travis`
+
+    If you don't have [brew](https://brew.sh) installed yet... prepare yourself for some waiting. You can install it with this command:
+
+    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
 
 *Congrats!* You now have a new book that will rebuild automatically any time you push changes to github.
 
