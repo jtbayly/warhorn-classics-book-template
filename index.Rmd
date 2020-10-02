@@ -7,7 +7,7 @@ params:
   scans: ""
   build: "1"
 cover-image: "cover.jpg"
-url: "https://warhornmedia.github.io/warhorn-classics-book-template"
+url: "https://warhornmedia.github.io/warhorn-classics-book-template/"
 output: 
   bookdown::gitbook:
     config:
