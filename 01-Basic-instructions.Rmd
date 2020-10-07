@@ -27,6 +27,10 @@ knitr::include_graphics('images/screenshot2.png')
     ```
       brew install travis
     ```
+    
+    Before this will work, you will need to create an account on travis-ci.com and link it to your github account.
+    
+    NOTE FOR JOSEPH: should the .travis.yml file generated in this process be committed to the repo, or is that a secret that should be on your machine? I assume the former, but I don't know.
 
     If you don't have [brew](https://brew.sh) installed yet... prepare yourself for some waiting. You can install it with this command:
 
