@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -71,8 +73,8 @@
 <li><a href="./">Book Template — Warhorn Classics</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#cover"><i class="fa fa-check"></i>Cover</a></li>
 <li class="chapter" data-level="1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html"><i class="fa fa-check"></i><b>1</b> Basic instructions</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html#creating-a-new-book"><i class="fa fa-check"></i><b>1.1</b> Creating a new book</a></li>
@@ -124,6 +126,8 @@
 <li id="fn1"><p><a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token">Here are instructions</a> for creating a Github Personal Access Token if you don’t have one yet. (Check the “repo” box under “scopes” to give the necessary permissions.)</p>
 <p>Also, if you don’t have <a href="https://github.com/travis-ci/travis.rb#installation">travis</a> installed on your computer yet, you can install it with this command:</p>
 <pre><code>  brew install travis</code></pre>
+<p>Before this will work, you will need to create an account on travis-ci.com and link it to your github account.</p>
+<p>NOTE FOR JOSEPH: should the .travis.yml file generated in this process be committed to the repo, or is that a secret that should be on your machine? I assume the former, but I don’t know.</p>
 <p>If you don’t have <a href="https://brew.sh">brew</a> installed yet… prepare yourself for some waiting. You can install it with this command:</p>
 <pre><code>  /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</code></pre>
 <a href="01-Basic-instructions.html#fnref1" class="footnote-back">↩︎</a></li>

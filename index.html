@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -71,8 +73,8 @@
 <li><a href="./">Book Template — Warhorn Classics</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#cover"><i class="fa fa-check"></i>Cover</a></li>
 <li class="chapter" data-level="1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html"><i class="fa fa-check"></i><b>1</b> Basic instructions</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html#creating-a-new-book"><i class="fa fa-check"></i><b>1.1</b> Creating a new book</a></li>
@@ -104,17 +106,12 @@
 </div>
 <!--- Download the classics template files if not already available -->
 <!--- Include the classics frontmatter in the book -->
-<!--- Include the cover (if it exists), but only in the HTML version of the book -->
-<div id="cover" class="section level1 unnumbered">
-<h1>Cover</h1>
-<p><img src="cover.jpg" width="75%" style="display: block; margin: auto;" /></p>
-</div>
 <div id="about-this-book" class="section level1 unnumbered">
 <h1>About this book</h1>
-<p><img src="classics-template-files/images/whitelogo.png" width="50%" style="display: block; margin: auto;" /></p>
-<div class="center">
+<!--- Warhorn Classics Logo ------
+<img src="classics-template-files/images/whitelogo-blackletter.png" width="50%" style="display: block; margin: auto;" />
+-->
 <p>Republished by <a href="https://classics.warhornmedia.com/">Warhorn Classics</a></p>
-</div>
 <p>Making classic Christian content available for free online in high quality, readable formats.</p>
 <p>The latest version of this book can always be found <a href="https://warhornmedia.github.io/warhorn-classics-book-template/">here</a> in many electronic formats for your reading convenience on any device.</p>
 <div id="downloads" class="section level4 unnumbered">
@@ -124,8 +121,13 @@
 <p>We hope this book is a blessing to you. If it is, please <a href="https://warhornmedia.com/give">make a one-time or recurring contribution</a> right now, sponsor a book from our upcoming list, or volunteer your proofreading or technical skills to help produce more content. Contact <a href="mailto:lucas@beggarsborn.com">Lucas Weeks</a> to get involved.</p>
 <p>God bless,</p>
 <p>—The Warhorn Team</p>
-
+<!--- Include the cover (if it exists), but only in the HTML version of the book -->
 </div>
+</div>
+<div id="cover" class="section level1 unnumbered">
+<h1>Cover</h1>
+<p><img src="cover.jpg" width="75%" style="display: block; margin: auto;" /></p>
+
 </div>
 <script> 
  	 var refTagger = {
