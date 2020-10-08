@@ -1,6 +1,6 @@
 # Basic instructions
 
-## Creating a new book
+## Creating a new repo for a new book on Github
 
 1. Go to [the repo](https://github.com/warhornmedia/warhorn-classics-book-template) on Github and click "Use this template." 
 
@@ -19,6 +19,11 @@ knitr::include_graphics('images/screenshot2.png')
     ```
     travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x
     ```
+
+## Preparing your local build environment
+
+1. Download RStudio for desktop [here](https://rstudio.com/products/rstudio/).
+2. Make sure that [LiberationSerif](https://www.fontsquirrel.com/fonts/liberation-serif) is installed.
 
 [^1]: [Here are instructions](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) for creating a Github Personal Access Token if you don't have one yet. (Check the “repo” box under "scopes" to give the necessary permissions.)
 
