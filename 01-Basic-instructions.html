@@ -77,7 +77,8 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#cover"><i class="fa fa-check"></i>Cover</a></li>
 <li class="chapter" data-level="1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html"><i class="fa fa-check"></i><b>1</b> Basic instructions</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html#creating-a-new-book"><i class="fa fa-check"></i><b>1.1</b> Creating a new book</a></li>
+<li class="chapter" data-level="1.1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html#creating-a-new-repo-for-a-new-book-on-github"><i class="fa fa-check"></i><b>1.1</b> Creating a new repo for a new book on Github</a></li>
+<li class="chapter" data-level="1.2" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html#preparing-your-local-build-environment"><i class="fa fa-check"></i><b>1.2</b> Preparing your local build environment</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -101,8 +102,8 @@
             <section class="normal" id="section-">
 <div id="basic-instructions" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Basic instructions</h1>
-<div id="creating-a-new-book" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Creating a new book</h2>
+<div id="creating-a-new-repo-for-a-new-book-on-github" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Creating a new repo for a new book on Github</h2>
 <ol style="list-style-type: decimal">
 <li>Go to <a href="https://github.com/warhornmedia/warhorn-classics-book-template">the repo</a> on Github and click “Use this template.”</li>
 </ol>
@@ -114,6 +115,13 @@
 <ol start="3" style="list-style-type: decimal">
 <li><p>Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering ‘yes’ to both questions.<a href="01-Basic-instructions.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <pre><code>travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x</code></pre></li>
+</ol>
+</div>
+<div id="preparing-your-local-build-environment" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Preparing your local build environment</h2>
+<ol style="list-style-type: decimal">
+<li>Download RStudio for desktop <a href="https://rstudio.com/products/rstudio/">here</a>.</li>
+<li>Make sure that <a href="https://www.fontsquirrel.com/fonts/liberation-serif">LiberationSerif</a> is installed.</li>
 </ol>
 <p><em>Congrats!</em> You now have a new book that will rebuild automatically any time you push changes to github.</p>
 <p>For more in-depth instructions on setting up your new book, as well as important information on how to code the book, check out the <a href="https://warhornmedia.github.io/style-guide">style guide</a>.</p>
