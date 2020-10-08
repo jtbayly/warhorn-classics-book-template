@@ -33,7 +33,7 @@
   
 <link rel="prev" href="index.html"/>
 
-<script src="libs/header-attrs-2.4.1/header-attrs.js"></script>
+<script src="libs/header-attrs-2.4.2/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -74,7 +74,6 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this book</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#cover"><i class="fa fa-check"></i>Cover</a></li>
 <li class="chapter" data-level="1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html"><i class="fa fa-check"></i><b>1</b> Basic instructions</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="01-Basic-instructions.html"><a href="01-Basic-instructions.html#creating-a-new-repo-for-a-new-book-on-github"><i class="fa fa-check"></i><b>1.1</b> Creating a new repo for a new book on Github</a></li>
@@ -113,9 +112,11 @@
 </ol>
 <p><img src="images/screenshot2.png" width="65%" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
+<li><p>Create an account on travis-ci.com and link it to your github account. Make sure to give it permission for the warhornmedia organization as well.</p></li>
 <li><p>Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering ‘yes’ to both questions.<a href="01-Basic-instructions.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <pre><code>travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x</code></pre></li>
 </ol>
+<p>This will encrypt your token so that only Travis CI can use it. Then it will add it to the end of the .travis.yml file. Because it is encrypted, it doesn’t matter that it is available in our public repo in the .travis.yml file. In fact, it has to be there. Without that, Travis CI wouldn’t be able to save the updated book files back to Github.</p>
 </div>
 <div id="preparing-your-local-build-environment" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Preparing your local build environment</h2>
@@ -135,7 +136,6 @@
 <p>Also, if you don’t have <a href="https://github.com/travis-ci/travis.rb#installation">travis</a> installed on your computer yet, you can install it with this command:</p>
 <pre><code>  brew install travis</code></pre>
 <p>Before this will work, you will need to create an account on travis-ci.com and link it to your github account.</p>
-<p>NOTE FOR JOSEPH: should the .travis.yml file generated in this process be committed to the repo, or is that a secret that should be on your machine? I assume the former, but I don’t know.</p>
 <p>If you don’t have <a href="https://brew.sh">brew</a> installed yet… prepare yourself for some waiting. You can install it with this command:</p>
 <pre><code>  /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</code></pre>
 <a href="01-Basic-instructions.html#fnref1" class="footnote-back">↩︎</a></li>

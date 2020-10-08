@@ -184,6 +184,8 @@ God bless,
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
 \item
+  Create an account on travis-ci.com and link it to your github account. Make sure to give it permission for the warhornmedia organization as well.
+\item
   Clone the new repo to your computer and navigate into its folder in Terminal. Then run the following command locally, answering `yes' to both questions.\footnote{\href{https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token}{Here are instructions} for creating a Github Personal Access Token if you don't have one yet. (Check the ``repo'' box under ``scopes'' to give the necessary permissions.)
 
     Also, if you don't have \href{https://github.com/travis-ci/travis.rb\#installation}{travis} installed on your computer yet, you can install it with this command:
@@ -193,8 +195,6 @@ God bless,
 \end{Verbatim}
 
     Before this will work, you will need to create an account on travis-ci.com and link it to your github account.
-
-    NOTE FOR JOSEPH: should the .travis.yml file generated in this process be committed to the repo, or is that a secret that should be on your machine? I assume the former, but I don't know.
 
     If you don't have \href{https://brew.sh}{brew} installed yet\ldots{} prepare yourself for some waiting. You can install it with this command:
 
@@ -207,6 +207,8 @@ God bless,
 travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x
 \end{verbatim}
 \end{enumerate}
+
+This will encrypt your token so that only Travis CI can use it. Then it will add it to the end of the .travis.yml file. Because it is encrypted, it doesn't matter that it is available in our public repo in the .travis.yml file. In fact, it has to be there. Without that, Travis CI wouldn't be able to save the updated book files back to Github.
 
 \hypertarget{preparing-your-local-build-environment}{%
 \section{Preparing your local build environment}\label{preparing-your-local-build-environment}}
