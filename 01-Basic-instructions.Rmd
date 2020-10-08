@@ -20,6 +20,8 @@ knitr::include_graphics('images/screenshot2.png')
     travis encrypt GITHUB_PAT=yourTokenGoesHere --com --add -x
     ```
 
+This will encrypt your token so that only Travis can use it, and only on this repo. Then you don't need to worry about that encrypted data showing up in our public repo in the .travis.yml file.
+
 [^1]: [Here are instructions](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) for creating a Github Personal Access Token if you don't have one yet. (Check the “repo” box under "scopes" to give the necessary permissions.)
 
     Also, if you don't have [travis](https://github.com/travis-ci/travis.rb#installation) installed on your computer yet, you can install it with this command: 
