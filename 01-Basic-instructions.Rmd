@@ -2,7 +2,7 @@
 
 ## Creating a new repo for a new book on Github
 
-1. Go to [the repo](https://github.com/warhornmedia/warhorn-classics-book-template) on Github and click "Use this template." 
+1. Go to [the repo](https://github.com/warhornmedia/warhorn-classics-book-template) on Github and click "Use this template." (You must be logged into Github already.)
 
 ```{r echo = FALSE, fig.align = 'center', out.width = "65%"}
 knitr::include_graphics('images/screenshot1.png')
