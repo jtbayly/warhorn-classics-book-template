@@ -4,7 +4,8 @@ author: "Warhorn Classics"
 date: "2020"
 description: "This empty book is a template for starting new Warhorn Classics book projects."
 params:
-  scans: ""
+  pubinfo: "Originally published as “This Is An Empty Book” in *Warhorn Classics Anthology* (Bayly, McNeilly, Weeks, et al, 2020), 219–283."
+  scans: "https://archive.org"
   build: "1"
 cover-image: "cover.jpg"
 url: "https://warhornmedia.github.io/classics-empty-book/"
@@ -14,10 +15,9 @@ output:
       toc:
         scroll_highlight: yes
         before: |
-          <li><a href="https://www.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
+          <li><a href="https://classics.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
           <li><a href="./">Empty Book — Warhorn Classics</a></li>
         after: |
-          <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
       edit: https://github.com/warhornmedia/classics-empty-book/edit/master/%s
 documentclass: book
 always_allow_html: yes
