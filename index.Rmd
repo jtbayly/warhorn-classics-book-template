@@ -6,7 +6,7 @@ description: "This empty book is a template for starting new Warhorn Classics bo
 params:
   pubinfo: "Originally published as “This Is An Empty Book” in *Warhorn Classics Anthology* (Bayly, McNeilly, Weeks, et al, 2020), 219–283."
   scans: "https://archive.org"
-  build: "1"
+  build: "0"
 cover-image: "cover.jpg"
 url: "https://warhornmedia.github.io/classics-empty-book/"
 output: 
