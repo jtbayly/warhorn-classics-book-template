@@ -1,6 +1,4 @@
-<!--- move the **Current Status** to directly before the italicized name of the appropriate status, as in the template below --->
-
-#### Text Status {-}
+#### Text Status {-}<!--- place **Current Status** directly before the italicized name of the appropriate status, as in the template below --->
 
 0. **Current Status***Unstarted* – Empty project files created, but that's it.
 1. *Rough* – Metadata entered, computer-generated text from scans entered. Unstructured, and likely to include many errors.
